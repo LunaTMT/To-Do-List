@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Queensides';
+    src: url('Assets/fonts/Queensides.ttf') format('truetype');
+}
+
+
+
+h1 {
+    position: fixed;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    font-family: 'Queensides', sans-serif; /* Use the font-family name defined in @font-face */
+}
+
+#add_button {
+    position: fixed;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    border: none;
+    
+}
+
+.list {
+    position: fixed;
+    top: 35%;
+    width: 80%;
+}
+
+.item {
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    height: 30px;
+ 
+    margin-bottom: 20px;
+}
+
+.item .textbox {
+    width: 90%;
+    text-indent: 10px;
+    font-family: 'Queensides', sans-serif;
+    font-size: 100%;
+}
+
+
+.remove_button {
+    width: 30px; /* Set the width of the button */
+    height: 100%; /* Set the height of the button */
+    background-image: url(Assets/images/cancel_button.png); /* Set the background image */
+    background-size: cover; /* Scale the background image to cover the entire button */
+    background-position: center; /* Center the background image */
+    border: none;
+    
+}
+
+.checkbox{
+
+    width: 25px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+
+
+/* CSS for small devices (phones) */
+@media only screen and (max-width: 600px) {
+    /* CSS styles for small devices */
+    .remove_button {
+        margin-left: 2%;
+        width: 34px;
+
+    }
+
+
+    .item .textbox {
+        height: 80%;
+        text-indent: 10px;
+       
+    }
+    
+    .checkbox {
+        margin-right: 2%;
+        transform: scale(2);
+    }
+}
+
+/* CSS for medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .remove_button {
+        margin-left: 1%;
+        width: 31px;
+    }
+
+    .item .textbox {
+        height: 80%;
+        text-indent: 10px;
+       
+    }
+    
+    .checkbox {
+        margin-right: 1%;
+        transform: scale(2);
+    }
+
+}
+
+/* CSS for large devices (desktops) */
+@media only screen and (min-width: 993px) {
+    /* CSS styles for large devices */
+    .remove_button {
+        margin-left: 1%;
+        width: 30px;
+    }
+
+    .item .textbox {
+        height: 95%;
+        text-indent: 10px;
+       
+    }
+    
+    .checkbox {
+        margin-right: 1%;
+        transform: scale(2);
+    }
+
+}
+
+/* CSS for extra large devices (large desktops) */
+@media only screen and (min-width: 1200px) {
+    /* CSS styles for extra large devices */
+
+}
